@@ -1,0 +1,224 @@
+/* ===== BANNER ===== */
+.about-banner {
+  height: 45vh;
+  background: url("assets/schoolnexgen.png") center/cover no-repeat;
+  position: relative;
+}
+
+.banner-overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner-overlay h1 {
+  font-size: 3rem;
+}
+
+.banner-overlay p {
+  margin-top: 8px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  padding: 60px 5%;
+}
+
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  color: #0b3c7d;
+  margin-bottom: 10px;
+}
+
+.about-content h3 {
+  color: #f9b233;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  line-height: 1.6;
+}
+
+/* ===== FEATURES ===== */
+.features {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature i {
+  font-size: 30px;
+  color: #f9b233;
+}
+
+.feature h4 {
+  margin-top: 10px;
+}
+
+/* ===== MISSION & VISION ===== */
+.mission-vision {
+  background: #f5f7fa;
+  padding: 60px 5%;
+}
+
+.mv-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.mv-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.mv-box i {
+  font-size: 35px;
+  color: #0b3c7d;
+}
+
+.mv-box h3 {
+  margin: 15px 0;
+}
+
+/* ===== STATS ===== */
+.stats-section {
+  background: #0b3c7d;
+  color: white;
+  padding: 50px 5%;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+
+.stat h2 {
+  font-size: 2.5rem;
+  color: #f9b233;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mv-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .banner-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.principal-section {
+  padding: 60px 5%;
+  background: #ffffff;
+}
+
+.principal-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.principal-image img {
+  width: 260px;
+  border-radius: 10px;
+}
+
+.principal-content h2 {
+  color: #0b3c7d;
+  margin-bottom: 15px;
+}
+
+.principal-content p {
+  line-height: 1.7;
+}
+
+.principal-content h4 {
+  margin-top: 15px;
+  color: #f9b233;
+}
+
+.chairman-section {
+  padding: 60px 5%;
+  background: #f5f7fa;
+}
+
+.chairman-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.chairman-quote h2 {
+  color: #0b3c7d;
+  margin-bottom: 15px;
+}
+
+.chairman-quote i {
+  font-size: 30px;
+  color: #f9b233;
+}
+
+.chairman-quote p {
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.chairman-image img {
+  width: 240px;
+  border-radius: 50%;
+}

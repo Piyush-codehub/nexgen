@@ -1,0 +1,162 @@
+/* ===== BANNER ===== */
+.contact-banner {
+  height: 40vh;
+  background: url("assets/schoolnexgen.png") center/cover no-repeat;
+  position: relative;
+}
+
+.banner-overlay {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner-overlay h1 {
+  font-size: 3rem;
+}
+
+.banner-overlay p {
+  margin-top: 8px;
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.contact-info h2 {
+  color: #0b3c7d;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-cards .card {
+  background: #f5f7fa;
+  padding: 25px 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.info-cards .card i {
+  font-size: 30px;
+  color: #f9b233;
+  margin-bottom: 10px;
+}
+
+.info-cards .card h3 {
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT FORM SECTION ===== */
+.contact-form-section {
+  padding: 60px 5%;
+}
+
+.form-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+form button {
+  background: #f9b233;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-image {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.form-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.call-now {
+  background: #f9b233;
+  color: #0b3c7d;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.call-now h3 {
+  margin: 5px 0 0 0;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  margin: 0 6px;
+  color: #0b3c7d;
+  font-size: 1.2rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call-now {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

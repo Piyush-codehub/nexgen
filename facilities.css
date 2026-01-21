@@ -1,0 +1,100 @@
+/* ===== BANNER ===== */
+.facilities-banner {
+  height: 45vh;
+  background: url("assets/facilities-banner.png") center/cover no-repeat;
+  position: relative;
+}
+
+.banner-overlay {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner-overlay h1 {
+  font-size: 3rem;
+}
+
+.banner-overlay p {
+  margin-top: 8px;
+}
+
+/* ===== INTRO ===== */
+.facilities-intro {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.facilities-intro h2 {
+  color: #0b3c7d;
+  margin-bottom: 15px;
+}
+
+.facilities-intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== FACILITIES GRID ===== */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 5%;
+}
+
+.facility-card {
+  background: #f5f7fa;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.facility-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.facility-card h3 {
+  color: #0b3c7d;
+  margin: 15px 0 10px 0;
+}
+
+.facility-card h3 i {
+  margin-right: 6px;
+  color: #f9b233;
+}
+
+.facility-card p {
+  padding: 0 10px 20px 10px;
+  font-size: 0.95rem;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-overlay h1 {
+    font-size: 2rem;
+  }
+}
