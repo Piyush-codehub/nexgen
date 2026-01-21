@@ -1,7 +1,7 @@
 /* ===== BANNER ===== */
 .contact-banner {
   height: 40vh;
-  background: url("assets/schoolnexgen.png") center/cover no-repeat;
+  background: url("schoolnexgen.png") center/cover no-repeat;
   position: relative;
 }
 
@@ -160,3 +160,4 @@ form button {
     align-items: center;
   }
 }
+
